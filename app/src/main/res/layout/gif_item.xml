@@ -3,10 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:layout_margin="16sp">
+    android:layout_margin="16sp"> // марджины в dp, размер текстов в sp
 
     <ImageView
-        android:id="@+id/vGIF"
+        android:id="@+id/vGIF" // всё маленькими через подчкивание
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"/>
