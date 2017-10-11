@@ -3,7 +3,7 @@ package a.testappgiphy.support;
 
 public class Constants { // можно ещё сделать класс final и создать приватный конструктор, чтобы не смочь наследоваться и создавать экзепляр
 
-    public static final String myLogs = "|||||||||||||||||||";
+    public static final String myLogs = "|||||||||||||||||||"; // лучше в каждом классе создавать String TAG = .class.getSimpleName()
     public static final String GIPHY_API_KEY = "dc6zaTOxFJmzC";
 
     public static final byte CODE_SUCCESS = 1; // это в enum лучше перенсти
