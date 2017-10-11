@@ -28,7 +28,7 @@ public class Manager {
 
     private Manager() {}
 
-    public static Manager getInstance() {
+    public static Manager getInstance() { // тут какое-то масло масленное. зачем тебе 'man' ещё?
         Manager man = instance;
         if (man == null) {
             synchronized (Manager.class) {
@@ -49,7 +49,7 @@ public class Manager {
         return response.getBody();
     }
 
-    public interface OnUpdateListener {
+    public interface OnUpdateListener { // интрефейс в конец класса
         void onUpdateFinished(byte resultCode);
     }
 
@@ -58,7 +58,7 @@ public class Manager {
     }
 
     private byte calling(final Context context) {
-        if (context != null && !NetworkUtils.isOnline(context)) {
+        if (context != null && !NetworkUtils.isOnline(context)) { //проверку на null лучше в утилиту всунуть
             setInitFinished(Constants.CODE_NETWORK_ERROR);
             return Constants.CODE_NETWORK_ERROR;
         } else {
@@ -92,7 +92,7 @@ public class Manager {
     }
 
     public void callingForTrends(final Context context) {
-        if (calling(context) == 1) {
+        if (calling(context) == 1) {                //magic number
             enqueue(service.getTrends(GIPHY_API_KEY));
         }
     }
