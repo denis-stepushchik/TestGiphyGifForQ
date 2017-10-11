@@ -14,7 +14,7 @@ import a.testappgiphy.fragments.GifListFragment;
 
 public class MainActivity extends AppCompatActivity implements Manager.OnUpdateListener {
 
-    private Manager manager = Manager.getInstance(); // ты добавил lazy init и не используешь это. дергай весь через getInstasnce()
+    private Manager manager = Manager.getInstance(); // ты добавил lazy init и не используешь это. дергай весь через getInstance()
     private Context context = this; // удали, по возможности не храни контекст, тем более когда ты меняшь context -> this
     //ты даже по символам проиграл, не говоря про бредовость)
     private String textToSearch;
