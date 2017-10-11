@@ -2,9 +2,9 @@ package a.testappgiphy.model;
 
 import com.google.gson.annotations.SerializedName;
 
-public class GIF {
+public class GIF { // только первая буква с строчкая, правильно Gif
 
-    @SerializedName("type")
+    @SerializedName("type") //а азачем здесь это?
     private String type;
 
     public String getId() {
@@ -26,7 +26,7 @@ public class GIF {
     }
 
 }
-//    "type": "gif",
+//    "type": "gif",                                       //лучше это или в mock объект перенести или удалить
 //    "id": "tOWyML1WPzKjm",
 //    "slug": "cheezburger-bears-tOWyML1WPzKjm",
 //    "url": "https://giphy.com/gifs/cheezburger-bears-tOWyML1WPzKjm",
